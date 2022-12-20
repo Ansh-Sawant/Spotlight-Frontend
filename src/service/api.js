@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const URL = `http://localhost:8000`;
-const URL = `https://api-spotlightansh.onrender.com/`;
+const URL = `https://api-spotlightansh.onrender.com`;
 
 const getNews = (page, size = 5) => {
   try {
