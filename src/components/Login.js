@@ -21,7 +21,7 @@ const Login = ({ setLoginUser }) => {
   };
 
   const login = (user, setLoginUser) => {
-    axios.post(`http://localhost:8000/login`, user).then((res) => {
+    axios.post(`https://api-spotlightansh.onrender.com/login`, user).then((res) => {
       alert(res.data.message);
       if (res.data.user) {
         setLoginUser(res.data.user);
